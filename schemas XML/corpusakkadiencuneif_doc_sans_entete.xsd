@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="http://www.tei-c.org/ns/1.0" xmlns:ns1="http://www.tei-c.org/ns/1.0">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:element name="TEI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ns1:div"/>
+      </xs:sequence>
+      <xs:attribute name="addressee" use="required" type="xs:token"/>
+      <xs:attribute name="constitution" use="required"/>
+      <xs:attribute name="domain" use="required"/>
+      <xs:attribute name="id" use="required"/>
+      <xs:attribute name="origDate" use="required"/>
+      <xs:attribute name="placeComposition" use="required" type="xs:token"/>
+      <xs:attribute name="placeDiscovery" use="required" type="xs:token"/>
+      <xs:attribute name="sender" use="required" type="xs:token"/>
+      <xs:attribute ref="xml:lang" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="div">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="ns1:del"/>
+        <xs:element ref="ns1:gap"/>
+        <xs:element ref="ns1:unclear"/>
+        <xs:element ref="ns1:w"/>
+        <xs:element ref="ns1:quote"/>
+        <xs:element ref="ns1:supplied"/>
+        <xs:element ref="ns1:num"/>
+      </xs:choice>
+      <xs:attribute name="place" type="xs:token"/>
+      <xs:attribute name="type" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="quote">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="ns1:quote"/>
+        <xs:element ref="ns1:num"/>
+        <xs:element ref="ns1:w"/>
+        <xs:element ref="ns1:gap"/>
+        <xs:element ref="ns1:del"/>
+        <xs:element ref="ns1:unclear"/>
+        <xs:element ref="ns1:supplied"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="num">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:token">
+          <xs:attribute name="line"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="del">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:token">
+          <xs:attribute name="line" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="unclear">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ns1:num"/>
+        <xs:element ref="ns1:g"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplied">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ns1:num"/>
+        <xs:element ref="ns1:g"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="w">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ns1:g"/>
+        <xs:element ref="ns1:supplied"/>
+        <xs:element ref="ns1:unclear"/>
+      </xs:choice>
+      <xs:attribute name="function" type="xs:NCName"/>
+      <xs:attribute name="corri" type="xs:token"/>
+      <xs:attribute name="surplus" type="xs:token"/>
+      <xs:attribute name="lemma" use="required"/>
+      <xs:attribute name="line" use="required"/>
+      <xs:attribute name="per"/>
+      <xs:attribute name="pos" use="required" type="xs:token"/>
+      <xs:attribute name="tns"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gap">
+    <xs:complexType mixed="true">
+      <xs:attribute name="line" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="g">
+    <xs:complexType mixed="true">
+      <xs:attribute name="refSyllab" use="required"/>
+      <xs:attribute name="refUnicode" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
