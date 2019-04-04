@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="http://www.tei-c.org/ns/1.0" xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="TEI">
+      <element name="text">
+        <attribute name="addressee">
+          <data type="token"/>
+        </attribute>
+        <attribute name="constitution"/>
+        <attribute name="domain"/>
+        <attribute name="id"/>
+        <attribute name="origDate"/>
+        <attribute name="placeComposition">
+          <data type="token"/>
+        </attribute>
+        <attribute name="placeDiscovery">
+          <data type="token"/>
+        </attribute>
+        <attribute name="sender">
+          <data type="token"/>
+        </attribute>
+        <attribute>
+          <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+          <data type="NCName"/>
+        </attribute>
+        <oneOrMore>
+          <element name="div">
+            <optional>
+              <attribute name="place">
+                <data type="token"/>
+              </attribute>
+            </optional>
+            <attribute name="type"/>
+            <oneOrMore>
+              <choice>
+                <ref name="del"/>
+                <ref name="gap"/>
+                <ref name="unclear"/>
+                <ref name="w"/>
+                <ref name="quote"/>
+                <ref name="supplied"/>
+                <ref name="num"/>
+              </choice>
+            </oneOrMore>
+          </element>
+        </oneOrMore>
+      </element>
+    </element>
+  </start>
+  <define name="title">
+    <element name="title">
+      <text/>
+    </element>
+  </define>
+  <define name="edition">
+    <element name="edition">
+      <text/>
+    </element>
+  </define>
+  <define name="editor">
+    <oneOrMore>
+      <element name="name">
+        <text/>
+      </element>
+    </oneOrMore>
+  </define>
+  <define name="author">
+    <element name="author">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="name"/>
+          <ref name="ptr"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="name">
+    <element name="name">
+      <optional>
+        <attribute name="type">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  <define name="ptr">
+    <element name="ptr">
+      <optional>
+        <attribute name="target">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <data type="anyURI"/>
+    </element>
+  </define>
+  <define name="date">
+    <element name="date">
+      <optional>
+        <attribute>
+          <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  <define name="bibl">
+    <element name="bibl">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="biblScope"/>
+          <ref name="edition"/>
+          <ref name="note"/>
+          <element name="analytic">
+            <ref name="author"/>
+            <optional>
+              <ref name="title"/>
+            </optional>
+            <ref name="biblScope"/>
+          </element>
+          <element name="monogr">
+            <optional>
+              <ref name="author"/>
+            </optional>
+            <optional>
+              <element name="editor">
+                <oneOrMore>
+                  <element name="name">
+                    <text/>
+                  </element>
+                </oneOrMore>
+              </element>
+            </optional>
+            <ref name="title"/>
+            <optional>
+              <ref name="biblScope"/>
+            </optional>
+            <ref name="date"/>
+          </element>
+          <element name="series">
+            <optional>
+              <ref name="note"/>
+              <element name="editor">
+                <text/>
+              </element>
+            </optional>
+            <ref name="title"/>
+            <choice>
+              <ref name="biblScope"/>
+              <ref name="ptr"/>
+            </choice>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="biblScope">
+    <element name="biblScope">
+      <optional>
+        <attribute name="from">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="to">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <attribute name="unit">
+        <data type="NCName"/>
+      </attribute>
+      <text/>
+    </element>
+  </define>
+  <define name="note">
+    <element name="note">
+      <text/>
+    </element>
+  </define>
+  <define name="quote">
+    <element name="quote">
+      <oneOrMore>
+        <choice>
+          <ref name="quote"/>
+          <ref name="num"/>
+          <ref name="w"/>
+          <ref name="gap"/>
+          <ref name="del"/>
+          <ref name="unclear"/>
+          <ref name="supplied"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="num">
+    <element name="num">
+      <data type="token"/>
+      <optional>
+        <attribute name="line"> </attribute>
+      </optional>
+    </element>
+  </define>
+  <define name="del">
+    <element name="del">
+      <attribute name="line"/>
+      <data type="token"/>
+    </element>
+  </define>
+  <define name="unclear">
+    <element name="unclear">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="num"/>
+          <ref name="g"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="supplied">
+    <element name="supplied">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="num"/>
+          <ref name="g"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="w">
+    <element name="w">
+      <optional>
+        <attribute name="function">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="corri">
+          <data type="token"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="surplus">
+          <data type="token"/>
+        </attribute>
+      </optional>
+      <attribute name="lemma"/>
+      <attribute name="line"/>
+      <optional>
+        <attribute name="per"/>
+      </optional>
+      <attribute name="pos">
+        <data type="token"/>
+      </attribute>
+      <optional>
+        <attribute name="tns"/>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <ref name="g"/>
+          <ref name="supplied"/>
+          <ref name="unclear"/>
+          <text/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="gap">
+    <element name="gap">
+      <text/>
+      <optional>
+        <attribute name="line">
+          <data type="token"/>
+        </attribute>
+      </optional>
+    </element>
+  </define>
+  <define name="g">
+    <element name="g">
+      <attribute name="refSyllab"/>
+      <attribute name="refUnicode"/>
+      <text/>
+    </element>
+  </define>
+</grammar>
