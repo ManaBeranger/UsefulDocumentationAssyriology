@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="https://raw.githubusercontent.com/ManaBeranger/annotation-Akkadian-texts-with-XML/master/schemas%20XML/corpusakkadiencuneif_doc_sans_entete.rng" type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <text xml:lang="akk" id="AbB 13 9" placeComposition="Babylone" placeDiscovery="Larsa"
       origDate="#g3" sender="Hammu-rabi" addressee="Sin-iddinam" domain="lettre administrative"
