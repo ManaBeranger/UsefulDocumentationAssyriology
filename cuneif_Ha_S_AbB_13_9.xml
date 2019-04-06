@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-model href="https://raw.githubusercontent.com/ManaBeranger/annotation-Akkadian-texts-with-XML/master/schemas%20XML/corpusakkadiencuneif_doc_sans_entete.rng" type="application/xml"
+<?xml-model href="https://raw.githubusercontent.com/ManaBeranger/XML-Cuneiform-Texts/master/schemas%20XML/corpusakkadiencuneif_doc_sans_entete.rng" type="application/xml"
 schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <text xml:lang="akk" id="AbB 13 9" placeComposition="Babylone" placeDiscovery="Larsa"
