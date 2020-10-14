@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="text">
+      <attribute name="addressee">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="author">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="century">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="genderAddressee">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="genderAuthor">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="genre">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="id"/>
+      <attribute name="king">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="period">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="placeComposition">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="placeDiscovery">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="prof">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="scribe">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="year">
+        <data type="integer"/>
+      </attribute>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <element name="gap">
+            <empty/>
+          </element>
+          <element name="w">
+            <attribute name="cf"/>
+            <attribute name="form"/>
+            <attribute name="frag"/>
+            <attribute name="gw"/>
+            <attribute name="lang">
+              <data type="NCName"/>
+            </attribute>
+            <attribute name="line"/>
+            <attribute name="norm">
+              <data type="NMTOKEN"/>
+            </attribute>
+            <attribute name="pos">
+              <data type="NCName"/>
+            </attribute>
+            <element name="gdl">
+              <oneOrMore>
+                <element name="g">
+                  <attribute name="break">
+                    <data type="NCName"/>
+                  </attribute>
+                  <attribute name="refSyllab"/>
+                  <attribute name="refUnicode"/>
+                  <attribute name="role">
+                    <data type="NCName"/>
+                  </attribute>
+                  <attribute name="value"/>
+                </element>
+              </oneOrMore>
+            </element>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </start>
+</grammar>
