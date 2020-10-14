@@ -56,9 +56,7 @@
             <attribute name="lang">
               <data type="NCName"/>
             </attribute>
-            <attribute name="line">
-              <data type="integer"/>
-            </attribute>
+            <attribute name="line"/>
             <attribute name="norm">
               <data type="NMTOKEN"/>
             </attribute>
