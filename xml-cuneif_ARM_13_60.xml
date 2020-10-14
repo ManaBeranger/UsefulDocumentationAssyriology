@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../Desktop/Scripta%20-%20develop%20ARLIN/schema-cuneif-mb.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<text id="ARM 13 60" genre="lettre" placeComposition="Inconnu" placeDiscovery="Mari"
+   period="oldbab" king="Zimri-Lim" century="18" year="1776" scribe="TBD"
+   author="Numušda-nahrari" genderAuthor="TBD" prof="TBD" addressee="Iddiyatum"
+   genderAddressee="TBD">
+   <w line="1" lang="akk-x-oldbab" frag="a-na" form="a-na" cf="ana" norm="TBD" pos="VZ"
+      gw="à, vers, pour">
+      <gdl>
+         <g value="a" break="no" role="syll" refSyllab="#MesZL839" refUnicode="#U+12000"/>
+         <g value="na" break="no" role="syll" refSyllab="#MesZL110" refUnicode="#U+1223E"/>
+      </gdl>
+   </w>
+   <w line="1" lang="akk-x-oldbab" frag="i-dí-ia-[t]im" form="i-dí-ia-tim" cf="Iddiyatum"
+      norm="TBD" pos="PH" gw="Iddiyatum">
+      <gdl>
+         <g value="i" break="no" role="syll" refSyllab="#MesZL252" refUnicode="#U+1213F"/>
+         <g value="dí" break="no" role="syll" refSyllab="#MesZL119" refUnicode="#U+12077"/>
+         <g value="ia" break="no" role="syll" refSyllab="#MesZL260" refUnicode="#U+12140"/>
+         <g value="tim" break="damaged" role="syll" refSyllab="#MesZL167" refUnicode="#U+12074"/>
+      </gdl>
+   </w>
+   <gap/>
+   <w line="2" lang="akk-x-oldbab" frag="qí-bí-ma" form="qí-bí-ma" cf="qabûm" norm="TBD" pos="VV"
+      gw="dire, parler, ordonner">
+      <gdl>
+         <g value="qí" break="no" role="syll" refSyllab="#MesZL737" refUnicode="#U+121A0"/>
+         <g value="bí" break="no" role="syll" refSyllab="#MesZL313" refUnicode="#U+12248"/>
+         <g value="ma" break="no" role="syll" refSyllab="#MesZL552" refUnicode="#U+12220"/>
+      </gdl>
+   </w>
+   <w line="3" lang="akk-x-oldbab" frag="um-ma" form="ù" cf="u" norm="u" pos="VZ" gw="et">
+      <gdl>
+         <g value="um" break="no" role="syll" refSyllab="#MesZL238" refUnicode="#U+1231D"/>
+         <g value="ma" break="no" role="syll" refSyllab="#MesZL552" refUnicode="#U+12220"/>
+      </gdl>
+   </w>
+   <w line="3" lang="akk-x-oldbab" frag="(d)NU.MUŠ.DA-na-ah-ra-ri"
+      form="(d)NU.MUŠ.DA-na-ah-ra-ri" cf="Numušda-nahrari" norm="TBD" pos="PH"
+      gw="NumusZda-nahrari">
+      <gdl> <g value="(d)" break="no" role="det" refSyllab="#MesZL10" refUnicode="#U+1202D"/>
+         <g value="NU" break="no" role="logo" refSyllab="#MesZL112" refUnicode="#U+12261"/>
+         <g value="MUŠ" break="no" role="logo" refSyllab="#MesZL585" refUnicode="#U+12232"/>
+         <g value="DA" break="no" role="logo" refSyllab="#MesZL561" refUnicode="#U+12055"/>
+         <g value="na" break="no" role="syll" refSyllab="#MesZL110" refUnicode="#U+1223E"/>
+         <g value="ah" break="no" role="syll" refSyllab="#MesZL636" refUnicode="#U+12134"/>
+         <g value="ra" break="no" role="syll" refSyllab="#MesZL511" refUnicode="#U+1228F"/>
+         <g value="ri" break="no" role="syll" refSyllab="#MesZL142" refUnicode="#U+12291"/>
+      </gdl>
+   </w>
+   <w line="4" lang="akk-x-oldbab" frag="i-na" form="i-na" cf="ina" norm="TBD" pos="VZ"
+      gw="dans, vers">
+      <gdl>
+         <g value="i" break="no" role="syll" refSyllab="#MesZL252" refUnicode="#U+1213F"/>
+         <g value="na" break="no" role="syll" refSyllab="#MesZL110" refUnicode="#U+1223E"/>
+      </gdl>
+   </w>
+   <w line="4" lang="akk-x-oldbab" frag="(giš)MÁ" form="(giš)MÁ" cf="eleppum" norm="TBD" pos="VS"
+      gw="bateau">
+      <gdl> <g value="(giš)" break="no" role="det" refSyllab="#MesZL469" refUnicode="#U+12111"/>
+         <g value="MÁ" break="no" role="logo" refSyllab="#MesZL201" refUnicode="#U+12223"/>
+      </gdl>
+   </w>
+   <w line="4" lang="akk-x-oldbab" frag="Ì" form="Ì" cf="šamnum" norm="TBD" pos="VS" gw="huile">
+      <gdl>
+         <g value="Ì" break="no" role="logo" refSyllab="#MesZL380" refUnicode="#U+1224C"/>
+      </gdl>
+   </w>
+   <w line="5" lang="akk-x-oldbab" frag="ša" form="ša" cf="ša" norm="TBD" pos="VZ" gw="de">
+      <gdl>
+         <g value="ša" break="no" role="syll" refSyllab="#MesZL566" refUnicode="#U+122AD"/>
+      </gdl>
+   </w>
+   <w line="5" lang="akk-x-oldbab" frag="tu-i" form="tu-i" cf="Tu'u" norm="TBD" pos="PH"
+      gw="Tu'u">
+      <gdl>
+         <g value="tu" break="no" role="syll" refSyllab="#MesZL86" refUnicode="#U+12305"/>
+         <g value="i" break="no" role="syll" refSyllab="#MesZL252" refUnicode="#U+1213F"/>
+      </gdl>
+   </w>
+   <w line="6" lang="akk-x-oldbab" frag="6" form="6" cf="6" norm="6" pos="NU" gw="6">
+      <gdl>
+         <g value="6" break="no" role="num" refSyllab="#MesZL862" refUnicode="#U+1240B"/>
+      </gdl>
+   </w>
+   <w line="6" lang="akk-x-oldbab" frag="SU" form="SU" cf="šiqlum" norm="TBD" pos="VS" gw="sicle">
+      <gdl>
+         <g value="SU" break="no" role="logo" refSyllab="#MesZL16" refUnicode="#U+122E2"/>
+      </gdl>
+   </w>
+   <w line="6" lang="akk-x-oldbab" frag="KÙ.BABBAR" form="KÙ.BABBAR" cf="kaspum" norm="TBD"
+      pos="VS" gw="argent">
+      <gdl>
+         <g value="KÙ" break="no" role="logo" refSyllab="#MesZL745" refUnicode="#U+121AC"/>
+         <g value="BABBAR" break="no" role="logo" refSyllab="#MesZL596" refUnicode="#U+12313"/>
+      </gdl>
+   </w> [x] <w line="8" lang="akk-x-oldbab" frag="wa-aš-še-er" form="wa-aš-še-er" cf="wašârum"
+      norm="TBD" pos="VV" gw="tomber, être soumis, (II) défaire, libérer">
+      <gdl>
+         <g value="wa" break="no" role="syll" refSyllab="#MesZL598" refUnicode="#U+1227F"/>
+         <g value="aš" break="no" role="syll" refSyllab="#MesZL1" refUnicode="#U+12038"/>
+         <g value="še" break="no" role="syll" refSyllab="#MesZL579" refUnicode="#U+122BA"/>
+         <g value="er" break="no" role="syll" refSyllab="#MesZL437" refUnicode="#U+12155"/>
+      </gdl>
+   </w>
+   <w line="9" lang="akk-x-oldbab" frag="ITI" form="ITI" cf="warhum" norm="TBD" pos="VS"
+      gw="mois">
+      <gdl>
+         <g value="ITI" break="no" role="logo" refSyllab="#MesZL20" refUnicode="#U+12317"/>
+      </gdl>
+   </w>
+   <w line="9'" lang="akk-x-oldbab" frag="li-li-ia-tim" form="li-li-ia-tim" cf="lîliâtum"
+      norm="TBD" pos="MM" gw="lîliâtum">
+      <gdl>
+         <g value="li" break="no" role="syll" refSyllab="#MesZL85" refUnicode="#U+121F7"/>
+         <g value="li" break="no" role="syll" refSyllab="#MesZL85" refUnicode="#U+121F7"/>
+         <g value="ia" break="no" role="syll" refSyllab="#MesZL260" refUnicode="#U+12140"/>
+         <g value="tim" break="no" role="syll" refSyllab="#MesZL167" refUnicode="#U+12074"/>
+      </gdl>
+   </w>
+   <w line="10'" lang="akk-x-oldbab" frag="U₄" form="ù" cf="u" norm="u" pos="VZ" gw="et">
+      <gdl>
+         <g value="U₄" break="no" role="logo" refSyllab="#MesZL596" refUnicode="#U+12313"/>
+      </gdl>
+   </w>
+   <w line="10'" lang="akk-x-oldbab" frag="2.KAM" form="2" cf="2" norm="2" pos="NU" gw="2">
+      <gdl>
+         <g value="2" break="no" role="num" refSyllab="#MesZL825" refUnicode="#U+1222B"/>
+         <g value="KAM" break="no" role="logo" refSyllab="#MesZL640"
+            refUnicode="#U+1212D&amp;U+12041"/>
+      </gdl>
+   </w>
+</text>
