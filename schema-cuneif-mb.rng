@@ -28,6 +28,9 @@
       <attribute name="king">
         <data type="NCName"/>
       </attribute>
+      <attribute name="license">
+        <data type="string"/>
+      </attribute>
       <attribute name="period">
         <data type="NCName"/>
       </attribute>
@@ -42,6 +45,9 @@
       </attribute>
       <attribute name="scribe">
         <data type="NCName"/>
+      </attribute>
+      <attribute name="source">
+        <data type="string"/>
       </attribute>
       <attribute name="year">
         <choice>
